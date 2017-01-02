@@ -1,0 +1,111 @@
+/* Properties for all the components */
+*{
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Main Head title properties */
+#menu{
+  text-align: center;
+  margin-bottom: 20px; 
+}
+/* Simple Responsive Framework. */
+.row {
+  width: 95%;
+  position: absolute;
+  left: 2.5%;
+}
+/*Common properties for all the sections */
+section{
+  background-color: honeydew;
+  border: 1px solid black;
+}
+/********** Desktop View **********/
+@media (min-width: 992px) {
+  .col-dv-4 {
+    position: relative;           /* Relative to the Column*/
+    float: left;                  /* Float Left to align all the elements within the column to the left */ 
+    margin-bottom: 2%             /* Provide space for the next row */
+  }
+  .col-dv-4 {
+    width: 33.33%;                /* Widht for a 3 columns arrangement */
+  }
+  section{
+    width: 95%;                   /* Section Widht = 95% of the column width */
+  }
+  #beef{
+    position: relative;           /* Position Relative to itself */ 
+    left: 2.5%;                   /* offset of half of the available space in the column */
+  }
+  #sushi{
+    float: right;                 /* Align to the right within its own column */
+  }
+}
+
+/********** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px) {
+   .col-tv-6, .col-tv-12 {
+    margin-bottom: 2%;
+    float: left;
+  }
+  .col-tv-6 {
+    width: 50%;
+  }
+  .col-tv-12{
+    width: 100%;
+  }
+  #chicken , #beef {               /* Widht of the section for a 2 columns arrangement at the 1st row */
+    width: 95%
+  }
+  #beef{
+    float: right;                  /* Align to the right */
+  }
+}
+/********** Mobile View **********/
+@media (max-width: 767px) {
+  .col-mv-12 {
+    margin-bottom: 5%;
+    float: left;
+  }
+  .col-mv-12 {
+    width: 100%;
+  }
+}
+.itemdes{
+  margin-top: 30px;
+  padding: 2%;
+}
+#menuItem1{                                  /* Propertioes for each menu item            */
+  background-color: yellow;                  /* at this point some code can be saved      */
+  text-align: center;                        /* but I prefer to leave it at it is,        */
+  font-size: 1.5em;                          /* the property that is changing is the      */
+  width: 130px;                              /* background color                          */
+  border: 1px solid black;
+  position: relative;
+  float: right;
+  right: -1px;
+  top: -1px;
+}
+#menuItem2{
+  background-color: dodgerblue;
+  text-align: center;
+  font-size: 1.5em;
+  width: 130px;
+  border: 1px solid black;
+  position: relative;
+  float: right;
+  right: -1px;
+  top: -1px;
+}
+#menuItem3{
+  background-color: orangered;
+  text-align: center;
+  font-size: 1.5em;
+  width: 130px;
+  border: 1px solid black;
+  position: relative;
+  float: right;
+  right: -1px;
+  top: -1px;
+}
